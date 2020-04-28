@@ -1,0 +1,31 @@
+{
+  "name": "testcafe-workspace",
+  "version": "1.0.0",
+  "description": "Automated testing with testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless /.tests -s takeOnFails=true",
+    "test:chrome:headless:5": "testcafe chrome:headless 5 ./tests -s takeOnFails=true",
+    "test:safari": "testcafe safari ./tests -s takeOnFails=true",
+    "test:firefox": "testcafe firefox ./tests -s takeOnFails=true",
+    "test:chrome:5": "testcafe -c 5 chrome ./tests -s takeOnFails=true",
+    "test:multiple": "testcafe firefox, chrome, safari ./tests -s takeOnFails=true"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation",
+    "Study"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "10": "0.0.1",
+    "prettier": "^2.0.4",
+    "testcafe": "^1.8.4"
+  },
+  "devDependencies": {
+    "xpath-to-css": "^1.0.4"
+  }
+}
